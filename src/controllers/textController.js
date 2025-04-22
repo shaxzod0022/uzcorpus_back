@@ -1,5 +1,5 @@
 const Text = require("../models/TextModel");
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 const searchTexts = async (req, res) => {
   const keyword = req.query.q;
   const author = req.query.author;
@@ -73,7 +73,6 @@ const searchTexts = async (req, res) => {
     res.json(filtered);
   } catch (err) {
     res.status(500).json({ message: "Server xatosi", error: err.message });
-    console.log(err);
   }
 };
 
