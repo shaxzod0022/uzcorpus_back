@@ -4,7 +4,7 @@ const {
   getAllTypes,
   updateType,
   deleteType,
-} = require("../controllers/TypeController");
+} = require("../controllers/typeController");
 const verifyAdmin = require("../middleware/authMiddleware");
 const router = express.Router();
 
