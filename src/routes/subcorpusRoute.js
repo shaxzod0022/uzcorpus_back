@@ -4,7 +4,7 @@ const {
   getAllSubcorpus,
   updateSubcorpus,
   deleteSubcorpus,
-} = require("../controllers/SubcorpusController");
+} = require("../controllers/subcorpusController");
 const verifyAdmin = require("../middleware/authMiddleware");
 const router = express.Router();
 
