@@ -18,6 +18,12 @@ app.use("/api/texts", textRoute);
 const adminRoute = require("./routes/adminRoute");
 app.use("/api/admin", adminRoute);
 
+const typeRoute = require("./routes/typeRoute");
+app.use("/api/types", typeRoute);
+
+const subcorpusRoute = require("./routes/subcorpusRoute");
+app.use("/api/subcorpus", subcorpusRoute);
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`🚀 Server running: http://localhost:${PORT}`);

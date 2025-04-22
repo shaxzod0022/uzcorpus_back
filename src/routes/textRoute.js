@@ -10,7 +10,7 @@ const {
 const verifyAdmin = require("../middleware/authMiddleware");
 
 router.get("/search", searchTexts);
-router.post("/add", verifyAdmin, addText);
+router.post("/add",  addText);
 router.get("/", getAllTexts);
 router.get("/one-text/:id", getTextById);
 router.delete("/delete/:id", verifyAdmin, deleteText);
